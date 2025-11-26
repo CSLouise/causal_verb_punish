@@ -3,7 +3,7 @@ const trials = {
     "order_1": {
         // Intentional condition
         "chain": {
-            "story": ["chain_v1/chain_intent.001.png", "chain_v1/chain_intent.002.png", "chain_v1/chain_intent.003.png", "chain_v1/chain_intent.004.png", "chain_v1/chain_intent.005.png", "chain_v1/chain_intent.006.png", "chain_v1/chain_intent.007.png", "chain_v1/chain_intent.008.png"],
+            "story": ["chain_v1/chain_intent.001.png", "chain_v1/chain_intent.002.png", "chain_v1/chain_intent.003.png", "chain_v1/chain_intent.004.png", "chain_v1/chain_intent.005.png", "chain_v1/chain_intent.006.png", "chain_v1/chain_intent.007.png", "chain_v1/chain_intent.008.png", "chain_v1/chain_intent.009.png", "chain_v1/chain_intent.010.png"],
             "questions": {
                 "cause": "chain_v1/chain_intentional_q_cause.png",
                 "simple": "chain_v1/chain_intentional_q_simple.png",
