@@ -45,7 +45,7 @@
             let responseData = {};
             for (const trialPage of jsPsych.data.get().filter({ "page_type": "trial_data" }).values()) {
                 const scenario = trialPage["scenario"];
-                const question = trialPage["question"];
+                const question = trialPage["question"]
                 responseData[`${scenario}_${question}`] = trialPage["response"]["Q0"];
             }
 
@@ -71,6 +71,8 @@
 
             // // combine all data 
             let data_final = {
+                "participant_id": participant_id,
+                "chain_type": chain_type,
                 "responses": responseData,
                 "participants": demographics,
             }
@@ -99,8 +101,14 @@
 
     // Randomly assign participants to either intentional (order_1) or accidental (order_2) condition
     const order_list = jsPsych.randomization.shuffle(["order_1", "order_2"])[0];
+    const chain_type = order_list === "order_1" ? "intentional" : "accidental";
+
+    // Generate unique participant ID using timestamp and random number
+    const participant_id = `P${Date.now()}_${Math.floor(Math.random() * 10000)}`;
 
     console.log(order_list);
+    console.log("Chain type:", chain_type);
+    console.log("Participant ID:", participant_id);
 
 
     // instructions
