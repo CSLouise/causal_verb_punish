@@ -9,10 +9,18 @@ OUTPUT_PATH = Path("data.csv")
 COLUMNS = [
     "participant_id",
     "chain_type",
-    "chain_cause",
-    "chain_simple",
-    "chain_fault",
-    "chain_punishment",
+    "scenario_order",
+    # Bike scenario responses
+    "bike_cause",
+    "bike_simple",
+    "bike_fault",
+    "bike_punishment",
+    # Mirror scenario responses
+    "mirror_cause",
+    "mirror_simple",
+    "mirror_fault",
+    "mirror_punishment",
+    # Demographics
     "age",
     "race",
     "gender",
@@ -47,14 +55,26 @@ def main():
         for rec in records:
             responses = rec.get("responses", {}) or {}
             participants = rec.get("participants", {}) or {}
+            scenario_order = rec.get("scenario_order", [])
+            
+            # Convert scenario_order list to string (e.g., "bike,mirror")
+            scenario_order_str = ",".join(scenario_order) if scenario_order else ""
 
             row = {
                 "participant_id": rec.get("participant_id", ""),
                 "chain_type": rec.get("chain_type", ""),
-                "chain_cause": responses.get("chain_cause", ""),
-                "chain_simple": responses.get("chain_simple", ""),
-                "chain_fault": responses.get("chain_fault", ""),
-                "chain_punishment": responses.get("chain_punishment", ""),
+                "scenario_order": scenario_order_str,
+                # Bike scenario responses
+                "bike_cause": responses.get("bike_cause", ""),
+                "bike_simple": responses.get("bike_simple", ""),
+                "bike_fault": responses.get("bike_fault", ""),
+                "bike_punishment": responses.get("bike_punishment", ""),
+                # Mirror scenario responses
+                "mirror_cause": responses.get("mirror_cause", ""),
+                "mirror_simple": responses.get("mirror_simple", ""),
+                "mirror_fault": responses.get("mirror_fault", ""),
+                "mirror_punishment": responses.get("mirror_punishment", ""),
+                # Demographics
                 "age": participants.get("age", ""),
                 "race": participants.get("race", ""),
                 "gender": participants.get("gender", ""),

@@ -73,6 +73,7 @@
             let data_final = {
                 "participant_id": participant_id,
                 "chain_type": chain_type,
+                "scenario_order": scenario_list, // Records the order of stories (bike/mirror)
                 "responses": responseData,
                 "participants": demographics,
             }
@@ -95,13 +96,13 @@
 
     // Create randomization
 
-    const scenario_list = ["chain"]; // Only one scenario now
+    const scenario_list = jsPsych.randomization.shuffle(["bike", "mirror"]); // Randomize bike and mirror scenarios
 
     const question_list = jsPsych.randomization.shuffle(["cause", "simple", "fault", "punishment"]);
 
-    // Randomly assign participants to either intentional (order_1) or accidental (order_2) condition
-    const order_list = jsPsych.randomization.shuffle(["order_1", "order_2"])[0];
-    const chain_type = order_list === "order_1" ? "intentional" : "accidental";
+    // Fixed to accidental condition (order_2) for this experiment
+    const order_list = "order_2";
+    const chain_type = "accidental";
 
     // Generate unique participant ID using timestamp and random number
     const participant_id = `P${Date.now()}_${Math.floor(Math.random() * 10000)}`;
@@ -158,10 +159,11 @@
             timeline.push(questions);
         };
 
-        // Since there's only one scenario now, go directly to demographic form
-        timeline.push(demographic_form);
         scenarioIdx += 1;
     };
+
+    // Add demographic form after all scenarios are completed
+    timeline.push(demographic_form);
 
 
     jsPsych.run(timeline);

@@ -1,26 +1,24 @@
 const trials = {
     "instructions": ["instructions.png"],
-    "order_1": {
-        // Intentional condition
-        "chain": {
-            "story": ["chain_v1/chain_intent.001.png", "chain_v1/chain_intent.002.png", "chain_v1/chain_intent.003.png", "chain_v1/chain_intent.004.png", "chain_v1/chain_intent.005.png", "chain_v1/chain_intent.006.png", "chain_v1/chain_intent.007.png", "chain_v1/chain_intent.008.png", "chain_v1/chain_intent.009.png", "chain_v1/chain_intent.010.png"],
+    "order_2": {
+        // Accidental condition - Bike scenario
+        "bike": {
+            "story": ["bike/bike_adults_accident.001.png", "bike/bike_adults_accident.002.png", "bike/bike_adults_accident.003.png", "bike/bike_adults_accident.004.png", "bike/bike_adults_accident.005.png", "bike/bike_adults_accident.006.png", "bike/bike_adults_accident.007.png", "bike/bike_adults_accident.008.png"],
             "questions": {
-                "cause": "chain_v1/chain_intentional_q_cause.png",
-                "simple": "chain_v1/chain_intentional_q_simple.png",
-                "fault": "chain_v1/chain_intentional_q_fault.png",
-                "punishment": "chain_v1/chain_intentional_q_punishment.png"
+                "cause": "bike/bike_adults_accident_q_cause.png",
+                "simple": "bike/bike_adults_accident_q_simple.png",
+                "fault": "bike/bike_adults_accident_q_fault.png",
+                "punishment": "bike/bike_adults_accident_q_punish.png"
             },
         },
-    },
-    "order_2": {
-        // Accidental condition
-        "chain": {
-            "story": ["chain_v1/chain_accident.001.png", "chain_v1/chain_accident.002.png", "chain_v1/chain_accident.003.png", "chain_v1/chain_accident.004.png", "chain_v1/chain_accident.005.png", "chain_v1/chain_accident.006.png", "chain_v1/chain_accident.007.png", "chain_v1/chain_accident.008.png"],
+        // Accidental condition - Mirror scenario
+        "mirror": {
+            "story": ["mirror/mirror_adults_accident.001.png", "mirror/mirror_adults_accident.002.png", "mirror/mirror_adults_accident.003.png", "mirror/mirror_adults_accident.004.png", "mirror/mirror_adults_accident.005.png", "mirror/mirror_adults_accident.006.png", "mirror/mirror_adults_accident.007.png", "mirror/mirror_adults_accident.008.png", "mirror/mirror_adults_accident.009.png", "mirror/mirror_adults_accident.010.png", "mirror/mirror_adults_accident.011.png", "mirror/mirror_adults_accident.012.png"],
             "questions": {
-                "cause": "chain_v1/chain_accidental_q_cause.png",
-                "simple": "chain_v1/chain_accidental_q_simple.png",
-                "fault": "chain_v1/chain_accidental_q_fault.png",
-                "punishment": "chain_v1/chain_accidental_q_punishment.png"
+                "cause": "mirror/mirror_adults_accident_q_cause.png",
+                "simple": "mirror/mirror_adults_accident_q_simple.png",
+                "fault": "mirror/mirror_adults_accident_q_fault.png",
+                "punishment": "mirror/mirror_adults_accident_q_punish.png"
             },
         },
     },
