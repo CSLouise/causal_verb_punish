@@ -1,6 +1,6 @@
 const trials = {
     "warm_up": {
-        "instruction": "../warm_up/instructions.png",
+        "instruction": "../warm_up/instruction.png",
         "story": [
             "../warm_up/warm_up.001.png",
             "../warm_up/warm_up.002.png",
