@@ -1,0 +1,680 @@
+{
+    "responses": {
+      "chain_cause": "Andy",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "This situation is an accident so I don't think either of them should be punished."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 35,
+      "race": "Asian",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764292941110_5466"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy as he ran into Suzy and caused it to break",
+      "chain_fault": "Andy as his bike caused him to hit Suzy and made her break the fence",
+      "chain_simple": "Andy as he ran into suzy",
+      "chain_punishment": "Neither as although it was Andy's fault, it was due to his bike having a problem"
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 29,
+      "race": "Asian",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293069020_9314"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy when he pushed the bike into the girl causing it to break.",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "Yes Andy for hitting her with the bike and causing the fence to break."
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 60,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Hispanic"
+    },
+    "participant_id": "P1764293023420_9142"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy",
+      "chain_fault": "Andy's fault",
+      "chain_simple": "Andy",
+      "chain_punishment": "Andy should be punished"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 53,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764292985281_2282"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy caused the fence to break.",
+      "chain_fault": "I guess both of them are sort of at fault. Andy for not paying closer attention to the fence and Suzy. And Suzy for not getting out of the way. However, I think Andy is most at fault because Suzy is technically a pedestrian in this situation and Andy is running a machine (aka bike).",
+      "chain_simple": "Andy did.",
+      "chain_punishment": "No one should be punished because it seems accidentally and not intentional."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 30,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293072365_4723"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy running into Suzy",
+      "chain_fault": "Andy",
+      "chain_simple": "Suzy",
+      "chain_punishment": "Andy should be punished"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 45,
+      "race": "Black/African American",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293088539_9758"
+},
+
+{
+    "responses": {
+      "chain_cause": "Suzy, but not her fault.",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "No, this was an accident. Andy's chain broke and Suzy got sent into a fence, It happens."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 44,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293201797_7692"
+},
+
+{
+    "responses": {
+      "chain_cause": "it all started with andy's bike slipping causing susy to move back and break the fence, ultimately susy broke the fence.",
+      "chain_fault": "Andy's chain slipped while on his bike causing susy to move back and hit the fence, it all started with andy so it could be Andy's fault.",
+      "chain_simple": "susy broke the fence by trying to move away from andy's bike.",
+      "chain_punishment": "Andy started these chain of events, the fault must be of him and his bike which caused susy to move back and break the fence."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 40,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Hispanic"
+    },
+    "participant_id": "P1764293174959_6347"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy knocked Suzy into the fence after his bike chain broke. It was unavoidable. ",
+      "chain_fault": "It was an accident caused by the broken bike chain.",
+      "chain_simple": "Andy knocked Suzy into the fence by accident.",
+      "chain_punishment": "They sould not be punished because it was an accident. They need to notify the owner of the fence that it is broken."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 55,
+      "race": "Black/African American",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293232164_806"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy, the boy in the bike",
+      "chain_fault": "The boy is at fault",
+      "chain_simple": "The girl, accidently ",
+      "chain_punishment": "The boy should be punished"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 32,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Hispanic"
+    },
+    "participant_id": "P1764293237799_9372"
+},
+
+{
+    "responses": {
+      "chain_cause": "The fence broke because Suzy fell into it after being accidentally hit by Andy, who was on a bicycle that suddenly broke.",
+      "chain_fault": "It is really no one's fault that the fence broke. It was simply an accident.",
+      "chain_simple": "Suzy technically broke the fence but only because Andy's broken bike hit her and pushed her into the fence.",
+      "chain_punishment": "No one should be punished. This was an accident that could not be helped."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 72,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293229437_3511"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy as he caused Suzy to fall",
+      "chain_fault": "Andy is solely at fault",
+      "chain_simple": "Andy broke the fence. Suzy wouldn't have fallen without his involvement",
+      "chain_punishment": "Andy as he intentionally hit Suzy with his bicycle"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 40,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Hispanic"
+    },
+    "participant_id": "P1764293344303_6383"
+},
+
+×
+{
+  "responses": {
+    "chain_cause": "Andy",
+    "chain_fault": "The boy on the bike",
+    "chain_simple": "Kid on the bike",
+    "chain_punishment": "Nah, nobody got hurt, and that is the most important thing to me.  If anything, the boy could do some chores for the owner of the fence perhaps.  Do some errands an offer to repair the fence he caused to break"
+  },
+  "chain_type": "accidental",
+  "participants": {
+    "age": 45,
+    "race": "White",
+    "gender": "Male",
+    "ethnicity": "Non-Hispanic"
+  },
+  "participant_id": "P1764293576358_7997"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy caused it to break. ",
+      "chain_fault": "It is Andy's fault. He ran into Susie. ",
+      "chain_simple": "Andy broke the fence because he pushed Susie into it. ",
+      "chain_punishment": "Andy should be punished. "
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 31,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293670013_2794"
+},
+
+{
+    "responses": {
+      "chain_cause": "the bike failed and caused the accident",
+      "chain_fault": "The bike",
+      "chain_simple": "The bike failed and caused the accident that broke the fence",
+      "chain_punishment": "What happened with the bike and fence was an accident. The bike had a mechanical failure and isn't the fault of either children."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 45,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293712951_6390"
+},
+
+{
+    "responses": {
+      "chain_cause": "Suzy",
+      "chain_fault": "Andy",
+      "chain_simple": "Suzy.",
+      "chain_punishment": "Andy."
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 43,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764293826648_4940"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy caused the fence to break by running into Suzy.",
+      "chain_fault": "Andy's fault for running into Suzy.",
+      "chain_simple": "Andy broke the fence.",
+      "chain_punishment": "Andy should be punished."
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 30,
+      "race": "Asian",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764294015722_9982"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "Andy"
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 53,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764294044879_2764"
+},
+
+{
+  "responses": {
+    "chain_cause": "NA",
+    "chain_fault": "Suzie",
+    "chain_simple": "Suzie did because of her action",
+    "chain_punishment": "no"
+  },
+  "chain_type": "intentional",
+  "participants": {
+    "age": 27,
+    "race": "White",
+    "gender": "Male",
+    "ethnicity": "Hispanic"
+  },
+  "participant_id": "P1764294119761_9849"
+},
+
+{
+    "responses": {
+      "chain_cause": "andy and suzy\n",
+      "chain_fault": "no one, it was an accident",
+      "chain_simple": "suzy and andy\n",
+      "chain_punishment": "no, it was an accident"
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 42,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764294084640_9240"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "Andy"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 52,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764294148715_4856"
+},
+
+{
+    "responses": {
+      "chain_cause": "kid riding the bike",
+      "chain_fault": "kid riding the bike",
+      "chain_simple": "Suzy",
+      "chain_punishment": "no one should be punished"
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 38,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764294190952_3606"
+},
+
+{
+    "responses": {
+      "chain_cause": "The boy caused the fence to break",
+      "chain_fault": "It's the boy's fault that the fence broke.",
+      "chain_simple": "Suzy broke the fence",
+      "chain_punishment": "The boy should be punished"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 43,
+      "race": "Asian",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764294283198_9662"
+},
+
+{
+    "responses": {
+      "chain_cause": "I think that Andy on the bike caused the fence to break",
+      "chain_fault": "No one, really. It was an accident",
+      "chain_simple": "I think technically Andy since he hit her into the fence, but she only broke it because of the crash",
+      "chain_punishment": "No. I think it was a tragic accident. No one was hurt which is great. "
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 25,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764294397549_7363"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy caused it to break because he was going to run over Suzy.",
+      "chain_fault": "Andys fault ",
+      "chain_simple": "Suzy broke the fence ",
+      "chain_punishment": "I don't think anybody should be punished because it was an accident that happened without anybody self control."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 31,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Hispanic"
+    },
+    "participant_id": "P1764294457997_8905"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy caused the fence to break by propelling Susie into the fence.",
+      "chain_fault": "It is Andy's fault.",
+      "chain_simple": "Andy broke the fence due to his careless riding of his bike.",
+      "chain_punishment": "Andy should be punished since he is the one that caused this entire event. Although since no one got hurt, it is not a huge deal."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 29,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764294493114_8523"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "Andy"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 34,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764295038355_1773"
+},
+
+{
+    "responses": {
+      "chain_cause": "While Suzy's direct contact with the fence WAS the cause for the fence breaking, it was through no FAULT of her own - as this was intentionally caused by the boy on the bicycle.",
+      "chain_fault": "The boy on the bicycle is 100% at fault for causing the fence to be broken.",
+      "chain_simple": "Suzy did indeed physically break the fence, as she was the only one to come into contact with it, but she is not to blame for the fence being broken, as this was intentionally caused by the boy on the bicycle. So, yes, she broke it; but she is not at fault.",
+      "chain_punishment": "The boy on the bicycle should definitely be punished for his actions."
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 37,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764295142934_316"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "Yes, Andy"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 47,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764295255649_1758"
+},
+
+{
+    "responses": {
+      "chain_cause": "Suzy",
+      "chain_fault": "The bikes fault . It broke. If someone had to be at fault then it would be the owner of the bike. ",
+      "chain_simple": "Suzy",
+      "chain_punishment": "no one"
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 47,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764295246501_5445"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy did.",
+      "chain_fault": "It is Andy's.",
+      "chain_simple": "Suzy did",
+      "chain_punishment": "Andy should be punished."
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 28,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764295463299_3717"
+},
+
+{
+    "responses": {
+      "chain_cause": "It was Suzy, on a technical level since she was the thing that broke it.\n",
+      "chain_fault": "Andy's fault, since he caused the accident to happen in the first place by hitting Suzy.",
+      "chain_simple": "Suzy, since her landing on the fence broke it.",
+      "chain_punishment": "Andy should be punished because he caused the accident to happen in the first place."
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 22,
+      "race": "Asian",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764295555839_9392"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy ran into Suzy so she would hit the fence and break it.",
+      "chain_punishment": "Andy"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 39,
+      "race": "White",
+      "gender": "Female",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764295625913_6802"
+},
+
+{
+    "responses": {
+      "chain_cause": "Susie caused the fence to break when she was pushed into it",
+      "chain_fault": "It was Andy's fault",
+      "chain_simple": "Andy",
+      "chain_punishment": "Yes, Andy should be punished"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 38,
+      "race": "Black/African American",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764295751566_3898"
+},
+
+{
+    "responses": {
+      "chain_cause": "Susie caused the fence to break but it wasn't her fault.",
+      "chain_fault": "Andy's fault since he purposefully hit Susie so she falls into it.",
+      "chain_simple": "Susie broke the fence but it's Andy's fault.",
+      "chain_punishment": "Andy should be punished because he could have seriously injured Susie. Not only that, but this is not acceptable behavior for a child."
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 33,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764296333554_8290"
+},
+
+{
+    "responses": {
+      "chain_cause": "andy",
+      "chain_fault": "andy",
+      "chain_simple": "the girl",
+      "chain_punishment": "Andy"
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 29,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764296929459_6988"
+},
+
+{
+    "responses": {
+      "chain_cause": "Suzy accidentally broke it but I wouldnt say it was her fault",
+      "chain_fault": "It was an accident really so it wasn't anyone's fault to be honest.",
+      "chain_simple": "As stated, it was an accident, so its hard to assign blame, but perhaps Andy should have been more careful so his chain wouldn't break but how would he know ?",
+      "chain_punishment": "Suzy accidentally broke the fence trying to avoid Andy on his bike who came lunging toward her after his chain broke"
+    },
+    "chain_type": "accidental",
+    "participants": {
+      "age": 42,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Hispanic"
+    },
+    "participant_id": "P1764297225259_3052"
+},
+
+{
+    "responses": {
+      "chain_cause": "Suzy running into the fence made the fence break.",
+      "chain_fault": "It is mostly Andy fault that the fence broke.",
+      "chain_simple": "Andy broke the fence when he hit Suzy.",
+      "chain_punishment": "Andy should be punished."
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 37,
+      "race": "Black/African American",
+      "gender": "Male",
+      "ethnicity": "Non-Hispanic"
+    },
+    "participant_id": "P1764297177719_5746"
+},
+
+{
+    "responses": {
+      "chain_cause": "Andy",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "Andy"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 63,
+      "race": "White",
+      "gender": "Male",
+      "ethnicity": "Hispanic"
+    },
+    "participant_id": "P1764297854114_3197"
+},
+
+{
+    "responses": {
+      "chain_cause": "A child named Andy that doesn't get discipline at home.",
+      "chain_fault": "Andy",
+      "chain_simple": "Andy",
+      "chain_punishment": "Andy"
+    },
+    "chain_type": "intentional",
+    "participants": {
+      "age": 44,
+      "race": "Asian",
+      "gender": "Male"
+    },
+    "participant_id": "P1764300493356_5157"
+}
+

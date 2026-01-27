@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Experiment</title>
+
+    <link href="https://unpkg.com/jspsych@7.2.3/css/jspsych.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://unpkg.com/jspsych@7.2.3"></script>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery-ui.min.js'></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.1"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.1"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-likert@1.1.1"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@1.0.1"></script>
+    <script src="https://proliferate.alps.science/static/js/proliferate.js"> </script>
+    <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.1"></script>
+
+
+
+    <script src='js/intro.js'></script>
+    <script src='js/consent.js'></script>
+    <script src='js/trial.js'></script>
+    <script src='js/demographic_form.js'></script>
+</head>
+
+<body></body>
+<script>
+
+
+
+
+    let timeline = []
+
+
+    // Experiment configuration
+    const condition_type = "physical_physical_present";
+
+    // Generate unique participant ID using timestamp and random number
+    const participant_id = `P${Date.now()}_${Math.floor(Math.random() * 10000)}`;
+
+    console.log("Condition:", condition_type);
+    console.log("Participant ID:", participant_id);
+
+
+    // Generate randomized question order
+    // 8 possible orders: 2 (break order) x 2 (anger order) x 2 (group order) = 8
+    const break_order = Math.random() < 0.5 ? ["break", "break_cause"] : ["break_cause", "break"];
+    const anger_order = Math.random() < 0.5 ? ["anger", "anger_cause"] : ["anger_cause", "anger"];
+    const group_order = Math.random() < 0.5 ? ["break_group", "anger_group"] : ["anger_group", "break_group"];
+    
+    // Construct final question order
+    let question_order = [];
+    for (const group of group_order) {
+        if (group === "break_group") {
+            question_order.push(...break_order);
+        } else {
+            question_order.push(...anger_order);
+        }
+    }
+    
+    console.log("Question order:", question_order);
+
+
+    // Data display
+
+    let jsPsych = initJsPsych({
+        show_progress_bar: true,
+        on_finish: () => {
+
+            jsPsych.data.displayData();
+            let responseData = {};
+            
+            // Collect warm-up responses
+            const warmupData = jsPsych.data.get().filter({ "page_type": "warmup_data" }).values();
+            for (const warmup of warmupData) {
+                const question_key = warmup["question_key"];
+                responseData[`warmup_${question_key}`] = warmup["response"]["Q0"];
+            }
+            
+            // Collect main story responses
+            for (const trialPage of jsPsych.data.get().filter({ "page_type": "trial_data" }).values()) {
+                const question_key = trialPage["question_key"];
+                responseData[question_key] = trialPage["response"]["Q0"];
+            }
+
+            console.log(responseData);
+
+
+            let gender = jsPsych.data.get().filter({ "page_type": "participant_survey" }).values()[0]["response"].gender
+            if (!gender && jsPsych.data.get().filter({ "page_type": "participant_survey" }).values()[0]["response"].other_gender) {
+                gender = "other_gender"
+            }
+            let age = parseInt(jsPsych.data.get().filter({ "page_type": "participant_survey" }).values()[0]["response"].age)
+            let race = jsPsych.data.get().filter({ "page_type": "participant_survey" }).values()[0]["response"].race
+            if (!race && jsPsych.data.get().filter({ "page_type": "participant_survey" }).values()[0]["response"].other_race) {
+                race = "other_race"
+            }
+            let ethnicity = jsPsych.data.get().filter({ "page_type": "participant_survey" }).values()[0]["response"].ethnicity
+            let demographics = {
+                "age": age,
+                "gender": gender,
+                "race": race,
+                "ethnicity": ethnicity
+            }
+
+            // combine all data 
+            let data_final = {
+                "participant_id": participant_id,
+                "condition": condition_type,
+                "question_order": question_order,
+                "responses": responseData,
+                "participants": demographics,
+            }
+
+            console.log(data_final)
+
+            proliferate.submit(data_final);
+
+            $('#jspsych-content').html('<div style="margin: auto;"> <p> Thank you for' +
+                ' participating in this experiment! </p> <p> Redirecting you back to' +
+                ' Prolific... </p>');
+            setTimeout(function () { }, 400);
+        }
+    })
+
+
+    // Consent
+
+    timeline.push(consent)
+
+
+    // Instruction page (shown first, before warm-up)
+    let instruction = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: `<img src=${trials["warm_up"]["instruction"]} width = "80%"></img>`,
+        choices: [(' ')],
+        prompt: "<p>Press the <b>spacebar</b> to continue.</p>"
+    };
+    timeline.push(instruction);
+
+
+    // Warm-up story
+    console.log("Adding warm-up story...");
+    for (const trial_page of trials["warm_up"]["story"]) {
+        let trial = {
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: `<img src=${trial_page} width = "70%"></img>`,
+            choices: [(' ')],
+            prompt: "<p>Press the <b>spacebar</b> to continue.</p>"
+        };
+        timeline.push(trial);
+    }
+
+    // Warm-up questions (switch and crumble)
+    const warmup_questions = ["switch", "crumble"];
+    for (const warmup_q of warmup_questions) {
+        let warmup_question = {
+            type: jsPsychSurveyText,
+            preamble: `<img src=${trials["warm_up"]["questions"][warmup_q]} width = "70%"></img>`,
+            questions: [
+                { prompt: 'Please write your response below', rows: 10, columns: 65 }
+            ],
+            data: {
+                "page_type": "warmup_data",
+                "question_key": warmup_q,
+            },
+        };
+        timeline.push(warmup_question);
+    }
+
+
+    // Main story
+    console.log("Adding main story...");
+    for (const trial_page of trials["main"]["story"]) {
+        let trial = {
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: `<img src=${trial_page} width = "70%"></img>`,
+            choices: [(' ')],
+            prompt: "<p>Press the <b>spacebar</b> to continue.</p>"
+        };
+        timeline.push(trial);
+    }
+
+    // Main story questions (in randomized order)
+    for (const q_key of question_order) {
+        let question = {
+            type: jsPsychSurveyText,
+            preamble: `<img src=${trials["main"]["questions"][q_key]} width = "70%"></img>`,
+            questions: [
+                { prompt: 'Please write your response below', rows: 10, columns: 65 }
+            ],
+            data: {
+                "page_type": "trial_data",
+                "question_key": q_key,
+            },
+        };
+        timeline.push(question);
+    }
+
+    // Add demographic form after all scenarios are completed
+    timeline.push(demographic_form);
+
+
+    jsPsych.run(timeline);
+</script>
+
+</html>
