@@ -36,13 +36,13 @@
 
 
     // Experiment configuration
-    const condition_type = "absence_physical_v2";
+    const condition_type = "not_visible";
 
     // Generate unique participant ID using timestamp and random number
     const participant_id = `P${Date.now()}_${Math.floor(Math.random() * 10000)}`;
 
-    // Randomize scenario order (hurt and shock)
-    const scenario_list = Math.random() < 0.5 ? ["hurt", "shock"] : ["shock", "hurt"];
+    // Randomize scenario order (excited and scared)
+    const scenario_list = Math.random() < 0.5 ? ["excited", "scared"] : ["scared", "excited"];
 
     // Randomize question order once (shared across both scenarios)
     const question_order = Math.random() < 0.5 ? ["cause", "lexical"] : ["lexical", "cause"];

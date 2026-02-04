@@ -11,12 +11,12 @@ COLUMNS = [
     "condition",
     "scenario_order",
     "question_order",
-    # Hurt scenario responses
-    "hurt_cause",
-    "hurt_lexical",
-    # Shock scenario responses
-    "shock_cause",
-    "shock_lexical",
+    # Excited scenario responses
+    "excited_cause",
+    "excited_lexical",
+    # Scared scenario responses
+    "scared_cause",
+    "scared_lexical",
     # Demographics
     "age",
     "race",
@@ -64,12 +64,12 @@ def main():
                 "condition": rec.get("condition", ""),
                 "scenario_order": scenario_order_str,
                 "question_order": question_order_str,
-                # Hurt scenario responses
-                "hurt_cause": responses.get("hurt_cause", ""),
-                "hurt_lexical": responses.get("hurt_lexical", ""),
-                # Shock scenario responses
-                "shock_cause": responses.get("shock_cause", ""),
-                "shock_lexical": responses.get("shock_lexical", ""),
+                # Excited scenario responses
+                "excited_cause": responses.get("excited_cause", ""),
+                "excited_lexical": responses.get("excited_lexical", ""),
+                # Scared scenario responses
+                "scared_cause": responses.get("scared_cause", ""),
+                "scared_lexical": responses.get("scared_lexical", ""),
                 # Demographics
                 "age": participants.get("age", ""),
                 "race": participants.get("race", ""),

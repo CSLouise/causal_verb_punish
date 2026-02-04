@@ -1,63 +1,42 @@
 const trials = {
     "instruction": "images/instructions.png",
     "scenarios": {
-        "hurt": {
+        "excited": {
             "story": [
-                "images/hurt_physical/Slide3.png",
-                "images/hurt_physical/Slide4.png",
-                "images/hurt_physical/Slide5.png",
-                "images/hurt_physical/Slide6.png",
-                "images/hurt_physical/Slide7.png",
-                "images/hurt_physical/Slide8.png",
-                "images/hurt_physical/Slide9.png",
-                "images/hurt_physical/Slide10.png",
-                "images/hurt_physical/Slide11.png",
-                "images/hurt_physical/Slide12.png",
-                "images/hurt_physical/Slide13.png",
-                "images/hurt_physical/Slide14.png",
-                "images/hurt_physical/Slide15.png",
-                "images/hurt_physical/Slide16.png",
-                "images/hurt_physical/Slide17.png",
-                "images/hurt_physical/Slide18.png",
-                "images/hurt_physical/Slide19.png",
-                "images/hurt_physical/Slide20.png",
-                "images/hurt_physical/Slide21.png",
-                "images/hurt_physical/Slide22.png",
-                "images/hurt_physical/Slide23.png"
+                "images/excited_visible/Slide49.png",
+                "images/excited_visible/Slide50.png",
+                "images/excited_visible/Slide51.png",
+                "images/excited_visible/Slide52.png",
+                "images/excited_visible/Slide53.png",
+                "images/excited_visible/Slide54.png",
+                "images/excited_visible/Slide55.png",
+                "images/excited_visible/Slide56.png",
+                "images/excited_visible/Slide57.png"
             ],
             "questions": {
-                "cause": "images/hurt_physical/q_cause_hurt_physical.png",
-                "lexical": "images/hurt_physical/q_hurt_physical.png"
+                "cause": "images/excited_visible/q_cause_excited.png",
+                "lexical": "images/excited_visible/q_excited.png"
             }
         },
-        "shock": {
+        "scared": {
             "story": [
-                "images/shock_physical/Slide27.png",
-                "images/shock_physical/Slide28.png",
-                "images/shock_physical/Slide29.png",
-                "images/shock_physical/Slide30.png",
-                "images/shock_physical/Slide31.png",
-                "images/shock_physical/Slide32.png",
-                "images/shock_physical/Slide33.png",
-                "images/shock_physical/Slide34.png",
-                "images/shock_physical/Slide35.png",
-                "images/shock_physical/Slide36.png",
-                "images/shock_physical/Slide37.png",
-                "images/shock_physical/Slide38.png",
-                "images/shock_physical/Slide39.png",
-                "images/shock_physical/Slide40.png",
-                "images/shock_physical/Slide41.png",
-                "images/shock_physical/Slide42.png",
-                "images/shock_physical/Slide43.png",
-                "images/shock_physical/Slide44.png",
-                "images/shock_physical/Slide45.png",
-                "images/shock_physical/Slide46.png",
-                "images/shock_physical/Slide47.png",
-                "images/shock_physical/Slide48.png"
+                "images/scare_visible/Slide33.png",
+                "images/scare_visible/Slide34.png",
+                "images/scare_visible/Slide35.png",
+                "images/scare_visible/Slide36.png",
+                "images/scare_visible/Slide37.png",
+                "images/scare_visible/Slide38.png",
+                "images/scare_visible/Slide39.png",
+                "images/scare_visible/Slide40.png",
+                "images/scare_visible/Slide41.png",
+                "images/scare_visible/Slide42.png",
+                "images/scare_visible/Slide43.png",
+                "images/scare_visible/Slide44.png",
+                "images/scare_visible/Slide45.png"
             ],
             "questions": {
-                "cause": "images/shock_physical/q_cause_shock_physical.png",
-                "lexical": "images/shock_physical/q_shock_physical.png"
+                "cause": "images/scare_visible/q_cause_scare.png",
+                "lexical": "images/scare_visible/q_scare.png"
             }
         }
     }
