@@ -55,7 +55,7 @@ def main():
             scenario_order = rec.get("scenario_order", [])
             question_order = rec.get("question_order", [])
             
-            # Convert scenario_order list to string (e.g., "hurt,shock")
+            # Convert scenario_order list to string (e.g., "excited,scared")
             scenario_order_str = ",".join(scenario_order) if scenario_order else ""
             question_order_str = ",".join(question_order) if question_order else ""
 
