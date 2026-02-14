@@ -3,23 +3,23 @@ const trials = {
     "scenarios": {
         "balloon": {
             "story": [
-                "images/balloon_present/balloon_present.001.png",
-                "images/balloon_present/balloon_present.002.png",
-                "images/balloon_present/balloon_present.003.png",
-                "images/balloon_present/balloon_present.004.png",
-                "images/balloon_present/balloon_present.005.png",
-                "images/balloon_present/balloon_present.006.png",
-                "images/balloon_present/balloon_present.007.png",
-                "images/balloon_present/balloon_present.008.png",
-                "images/balloon_present/balloon_present.009.png",
-                "images/balloon_present/balloon_present.010.png",
-                "images/balloon_present/balloon_present.011.png"
+                "images/balloon_present/Slide58.png",
+                "images/balloon_present/Slide59.png",
+                "images/balloon_present/Slide60.png",
+                "images/balloon_present/Slide61.png",
+                "images/balloon_present/Slide62.png",
+                "images/balloon_present/Slide63.png",
+                "images/balloon_present/Slide64.png",
+                "images/balloon_present/Slide65.png",
+                "images/balloon_present/Slide66.png",
+                "images/balloon_present/Slide67.png",
+                "images/balloon_present/Slide68.png"
             ],
             "questions": {
-                "pop": "images/balloon_present/balloon_present_q_pop.png",
-                "cause_pop": "images/balloon_present/balloon_present_q_cause_pop.png",
-                "sad": "images/balloon_present/balloon_present_q_sad.png",
-                "cause_sad": "images/balloon_present/balloon_present_q_cause_sad.png"
+                "pop": "images/balloon_present/q_pop.png",
+                "cause_pop": "images/balloon_present/q_cause_pop.png",
+                "sad": "images/balloon_present/q_sad.png",
+                "cause_sad": "images/balloon_present/q_cause_sad.png"
             },
             "response_options": {
                 "distal": "images/balloon_present/response_distal.png",
@@ -28,22 +28,22 @@ const trials = {
         },
         "drum": {
             "story": [
-                "images/drum_present/drum_present.001.png",
-                "images/drum_present/drum_present.002.png",
-                "images/drum_present/drum_present.003.png",
-                "images/drum_present/drum_present.004.png",
-                "images/drum_present/drum_present.005.png",
-                "images/drum_present/drum_present.006.png",
-                "images/drum_present/drum_present.007.png",
-                "images/drum_present/drum_present.008.png",
-                "images/drum_present/drum_present.009.png",
-                "images/drum_present/drum_present.010.png"
+                "images/drum_present/Slide42.png",
+                "images/drum_present/Slide43.png",
+                "images/drum_present/Slide44.png",
+                "images/drum_present/Slide45.png",
+                "images/drum_present/Slide46.png",
+                "images/drum_present/Slide47.png",
+                "images/drum_present/Slide48.png",
+                "images/drum_present/Slide49.png",
+                "images/drum_present/Slide50.png",
+                "images/drum_present/Slide51.png"
             ],
             "questions": {
-                "break": "images/drum_present/drum_present_q_break.png",
-                "cause_break": "images/drum_present/drum_present_q_cause_break.png",
-                "anger": "images/drum_present/drum_present_q_anger.png",
-                "cause_anger": "images/drum_present/drum_present_q_cause_anger.png"
+                "break": "images/drum_present/q_break.png",
+                "cause_break": "images/drum_present/q_cause_break.png",
+                "anger": "images/drum_present/q_anger.png",
+                "cause_anger": "images/drum_present/q_cause_anger.png"
             },
             "response_options": {
                 "distal": "images/drum_present/response_distal.png",

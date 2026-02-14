@@ -3,25 +3,25 @@ const trials = {
     "scenarios": {
         "balloon": {
             "story": [
-                "images/balloon_absent/balloon_absent.001.png",
-                "images/balloon_absent/balloon_absent.002.png",
-                "images/balloon_absent/balloon_absent.003.png",
-                "images/balloon_absent/balloon_absent.004.png",
-                "images/balloon_absent/balloon_absent.005.png",
-                "images/balloon_absent/balloon_absent.006.png",
-                "images/balloon_absent/balloon_absent.007.png",
-                "images/balloon_absent/balloon_absent.008.png",
-                "images/balloon_absent/balloon_absent.009.png",
-                "images/balloon_absent/balloon_absent.010.png",
-                "images/balloon_absent/balloon_absent.011.png",
-                "images/balloon_absent/balloon_absent.012.png",
-                "images/balloon_absent/balloon_absent.013.png"
+                "images/balloon_absent/Slide22.png",
+                "images/balloon_absent/Slide23.png",
+                "images/balloon_absent/Slide24.png",
+                "images/balloon_absent/Slide25.png",
+                "images/balloon_absent/Slide26.png",
+                "images/balloon_absent/Slide27.png",
+                "images/balloon_absent/Slide28.png",
+                "images/balloon_absent/Slide29.png",
+                "images/balloon_absent/Slide30.png",
+                "images/balloon_absent/Slide31.png",
+                "images/balloon_absent/Slide32.png",
+                "images/balloon_absent/Slide33.png",
+                "images/balloon_absent/Slide34.png"
             ],
             "questions": {
-                "pop": "images/balloon_absent/balloon_absent_q_pop.png",
-                "cause_pop": "images/balloon_absent/balloon_absent_q_cause_pop.png",
-                "sad": "images/balloon_absent/balloon_absent_q_sad.png",
-                "cause_sad": "images/balloon_absent/balloon_absent_q_cause_sad.png"
+                "pop": "images/balloon_absent/q_pop.png",
+                "cause_pop": "images/balloon_absent/q_cause_pop.png",
+                "sad": "images/balloon_absent/q_sad.png",
+                "cause_sad": "images/balloon_absent/q_cause_sad.png"
             },
             "response_options": {
                 "distal": "images/balloon_absent/response_distal.png",
@@ -30,25 +30,25 @@ const trials = {
         },
         "drum": {
             "story": [
-                "images/drum_absent/drum_absent.001.png",
-                "images/drum_absent/drum_absent.002.png",
-                "images/drum_absent/drum_absent.003.png",
-                "images/drum_absent/drum_absent.004.png",
-                "images/drum_absent/drum_absent.005.png",
-                "images/drum_absent/drum_absent.006.png",
-                "images/drum_absent/drum_absent.007.png",
-                "images/drum_absent/drum_absent.008.png",
-                "images/drum_absent/drum_absent.009.png",
-                "images/drum_absent/drum_absent.010.png",
-                "images/drum_absent/drum_absent.011.png",
-                "images/drum_absent/drum_absent.012.png",
-                "images/drum_absent/drum_absent.013.png"
+                "images/drum_absent/Slide3.png",
+                "images/drum_absent/Slide4.png",
+                "images/drum_absent/Slide5.png",
+                "images/drum_absent/Slide6.png",
+                "images/drum_absent/Slide7.png",
+                "images/drum_absent/Slide8.png",
+                "images/drum_absent/Slide9.png",
+                "images/drum_absent/Slide10.png",
+                "images/drum_absent/Slide11.png",
+                "images/drum_absent/Slide12.png",
+                "images/drum_absent/Slide13.png",
+                "images/drum_absent/Slide14.png",
+                "images/drum_absent/Slide15.png"
             ],
             "questions": {
-                "break": "images/drum_absent/drum_absent_q_break.png",
-                "cause_break": "images/drum_absent/drum_absent_q_cause_break.png",
-                "anger": "images/drum_absent/drum_absent_q_anger.png",
-                "cause_anger": "images/drum_absent/drum_absent_q_cause_anger.png"
+                "break": "images/drum_absent/q_break.png",
+                "cause_break": "images/drum_absent/q_cause_break.png",
+                "anger": "images/drum_absent/q_anger.png",
+                "cause_anger": "images/drum_absent/q_cause_anger.png"
             },
             "response_options": {
                 "distal": "images/drum_absent/response_distal.png",
