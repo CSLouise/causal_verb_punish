@@ -93,7 +93,10 @@
             let question_orders = {};
             for (const trialPage of jsPsych.data.get().filter({ "page_type": "question_order" }).values()) {
                 const scenario = trialPage["scenario"];
-                question_orders[scenario] = trialPage["order"];
+                question_orders[scenario] = {
+                    "order": trialPage["order"],
+                    "character_order": trialPage["character_order"]
+                };
             }
 
             // combine all data
@@ -140,11 +143,23 @@
 
     console.log("Question order (shared):", question_order);
 
+    // Character randomization
+    const character_order_condition = Math.random() < 0.5 ? 0 : 1;
+    const characters = {
+        "bike": ["andy", "suzy"],
+        "mirror": ["bobby", "sophia"]
+    };
+
     // Scenarios (bike and mirror in randomized order)
     for (const scenario of scenario_list) {
         console.log(`Adding scenario: ${scenario}`);
 
+        let scenario_chars = characters[scenario];
+        if (character_order_condition === 1) {
+            scenario_chars = [scenario_chars[1], scenario_chars[0]];
+        }
         console.log(`Question order for ${scenario}:`, question_order);
+        console.log(`Character order for ${scenario}:`, scenario_chars);
 
         // Record question order
         timeline.push({
@@ -154,7 +169,8 @@
             data: {
                 "page_type": "question_order",
                 "scenario": scenario,
-                "order": question_order
+                "order": question_order,
+                "character_order": scenario_chars
             },
             on_finish: function() {
                 // This trial is invisible, just for recording data
@@ -173,12 +189,12 @@
         }
 
         // Show questions in the randomized order
-        for (const question of question_order) {
-            if (question === "punish") {
-                // Step 1: Yes/No
-                const punishYesNo = {
+        for (const question_type of question_order) {
+            for (const character of scenario_chars) {
+                const question_key = `${question_type}_${character}`;
+                const question_trial = {
                     type: jsPsychHtmlButtonResponse,
-                    stimulus: `<img src="${trials["scenarios"][scenario]["questions"]["punish"]}" width="70%"></img>`,
+                    stimulus: `<img src="${trials["scenarios"][scenario]["questions"][question_key]}" width="70%"></img>`,
                     choices: [
                         buildOptionChoice("images/responses/yes.png"),
                         buildOptionChoice("images/responses/no.png")
@@ -187,80 +203,10 @@
                     data: {
                         "page_type": "trial_data",
                         "scenario": scenario,
-                        "question": "punish",
+                        "question": question_key,
                     },
                     on_finish: function(data) {
                         data.selected_option = data.response === 0 ? "yes" : "no";
-                    }
-                };
-                timeline.push(punishYesNo);
-
-                // Step 2: Distal/Proximal — only shown if participant chose "yes"
-                const punishWho = {
-                    timeline: [{
-                        type: jsPsychHtmlButtonResponse,
-                        stimulus: `<img src="${trials["scenarios"][scenario]["questions"]["punish"]}" width="70%"></img>`,
-                        choices: [
-                            buildOptionChoice(`images/responses/${scenario}_distal.png`),
-                            buildOptionChoice(`images/responses/${scenario}_proximal.png`)
-                        ],
-                        prompt: "<p>Please choose one option.</p>",
-                        data: {
-                            "page_type": "trial_data",
-                            "scenario": scenario,
-                            "question": "punish_who",
-                        },
-                        on_finish: function(data) {
-                            data.selected_option = data.response === 0 ? "distal" : "proximal";
-                        }
-                    }],
-                    conditional_function: function() {
-                        const punishTrial = jsPsych.data.get()
-                            .filter({ "page_type": "trial_data", "scenario": scenario, "question": "punish" })
-                            .last(1).values()[0];
-                        return punishTrial && punishTrial.selected_option === "yes";
-                    }
-                };
-                timeline.push(punishWho);
-
-            } else if (question === "cause" || question === "fault") {
-                // Distal/Proximal image buttons
-                const question_trial = {
-                    type: jsPsychHtmlButtonResponse,
-                    stimulus: `<img src="${trials["scenarios"][scenario]["questions"][question]}" width="70%"></img>`,
-                    choices: [
-                        buildOptionChoice(`images/responses/${scenario}_distal.png`),
-                        buildOptionChoice(`images/responses/${scenario}_proximal.png`)
-                    ],
-                    prompt: "<p>Please choose one option.</p>",
-                    data: {
-                        "page_type": "trial_data",
-                        "scenario": scenario,
-                        "question": question,
-                    },
-                    on_finish: function(data) {
-                        data.selected_option = data.response === 0 ? "distal" : "proximal";
-                    }
-                };
-                timeline.push(question_trial);
-
-            } else {
-                // simple: Distal/Proximal image buttons
-                const question_trial = {
-                    type: jsPsychHtmlButtonResponse,
-                    stimulus: `<img src="${trials["scenarios"][scenario]["questions"][question]}" width="70%"></img>`,
-                    choices: [
-                        buildOptionChoice(`images/responses/${scenario}_distal.png`),
-                        buildOptionChoice(`images/responses/${scenario}_proximal.png`)
-                    ],
-                    prompt: "<p>Please choose one option.</p>",
-                    data: {
-                        "page_type": "trial_data",
-                        "scenario": scenario,
-                        "question": question,
-                    },
-                    on_finish: function(data) {
-                        data.selected_option = data.response === 0 ? "distal" : "proximal";
                     }
                 };
                 timeline.push(question_trial);
