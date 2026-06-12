@@ -13,15 +13,23 @@ COLUMNS = [
     "bike_question_order",
     "mirror_question_order",
     # Bike scenario responses
-    "bike_cause",
-    "bike_simple",
-    "bike_fault",
-    "bike_punish",
+    "bike_cause_andy",
+    "bike_cause_suzy",
+    "bike_simple_andy",
+    "bike_simple_suzy",
+    "bike_fault_andy",
+    "bike_fault_suzy",
+    "bike_punish_andy",
+    "bike_punish_suzy",
     # Mirror scenario responses
-    "mirror_cause",
-    "mirror_simple",
-    "mirror_fault",
-    "mirror_punish",
+    "mirror_cause_sophia",
+    "mirror_cause_bobby",
+    "mirror_simple_sophia",
+    "mirror_simple_bobby",
+    "mirror_fault_sophia",
+    "mirror_fault_bobby",
+    "mirror_punish_sophia",
+    "mirror_punish_bobby",
     # Demographics
     "age",
     "race",
@@ -64,8 +72,8 @@ def main():
             scenario_order_str = ",".join(scenario_order) if scenario_order else ""
             
             # Convert question orders to strings
-            bike_q_order_str = ",".join(question_orders.get("bike", [])) if "bike" in question_orders else ""
-            mirror_q_order_str = ",".join(question_orders.get("mirror", [])) if "mirror" in question_orders else ""
+            bike_q_order_str = ",".join(question_orders.get("bike", {}).get("order", [])) if "bike" in question_orders else ""
+            mirror_q_order_str = ",".join(question_orders.get("mirror", {}).get("order", [])) if "mirror" in question_orders else ""
 
             row = {
                 "participant_id": rec.get("participant_id", ""),
@@ -74,15 +82,23 @@ def main():
                 "bike_question_order": bike_q_order_str,
                 "mirror_question_order": mirror_q_order_str,
                 # Bike scenario responses
-                "bike_cause": responses.get("bike_cause", ""),
-                "bike_simple": responses.get("bike_simple", ""),
-                "bike_fault": responses.get("bike_fault", ""),
-                "bike_punish": responses.get("bike_punish", ""),
+                "bike_cause_andy": responses.get("bike_cause_andy", ""),
+                "bike_cause_suzy": responses.get("bike_cause_suzy", ""),
+                "bike_simple_andy": responses.get("bike_simple_andy", ""),
+                "bike_simple_suzy": responses.get("bike_simple_suzy", ""),
+                "bike_fault_andy": responses.get("bike_fault_andy", ""),
+                "bike_fault_suzy": responses.get("bike_fault_suzy", ""),
+                "bike_punish_andy": responses.get("bike_punish_andy", ""),
+                "bike_punish_suzy": responses.get("bike_punish_suzy", ""),
                 # Mirror scenario responses
-                "mirror_cause": responses.get("mirror_cause", ""),
-                "mirror_simple": responses.get("mirror_simple", ""),
-                "mirror_fault": responses.get("mirror_fault", ""),
-                "mirror_punish": responses.get("mirror_punish", ""),
+                "mirror_cause_sophia": responses.get("mirror_cause_sophia", ""),
+                "mirror_cause_bobby": responses.get("mirror_cause_bobby", ""),
+                "mirror_simple_sophia": responses.get("mirror_simple_sophia", ""),
+                "mirror_simple_bobby": responses.get("mirror_simple_bobby", ""),
+                "mirror_fault_sophia": responses.get("mirror_fault_sophia", ""),
+                "mirror_fault_bobby": responses.get("mirror_fault_bobby", ""),
+                "mirror_punish_sophia": responses.get("mirror_punish_sophia", ""),
+                "mirror_punish_bobby": responses.get("mirror_punish_bobby", ""),
                 # Demographics
                 "age": participants.get("age", ""),
                 "race": participants.get("race", ""),
