@@ -14,7 +14,8 @@ const trials = {
                 "images/bike/009.png",
                 "images/bike/010.png",
                 "images/bike/011.png",
-                "images/bike/012.png"
+                "images/bike/012.png",
+                "images/bike/013.png"
             ],
             "questions": {
                 "cause_andy": "images/bike/cause_andy.png",
@@ -37,7 +38,8 @@ const trials = {
                 "images/mirror/006.png",
                 "images/mirror/007.png",
                 "images/mirror/008.png",
-                "images/mirror/009.png"
+                "images/mirror/009.png",
+                "images/mirror/010.png"
             ],
             "questions": {
                 "cause_bobby": "images/mirror/cause_bobby.png",
